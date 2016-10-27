@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <style> 
+         body {
+         background-color:transparent;         
+       }
+       #letterDay{}
+       #announcement{}
+       #widget{         
+          margin:auto;
+          text-align:center;
+       }    
+    </style>
+  </head>
+  <body>
+  <div id="widget">
+      <p id="letterDay"></p>
+      <p id="announcement"><p>
+    <div>
+  </body>
+  <script>
+function jsonp(url, callback) {
+    var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+    window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+        callback(data);
+    };
+
+    var script = document.createElement('script');
+    script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+    document.body.appendChild(script);
+}
+
+
+jsonp('https://script.google.com/a/macros/ccsknights.org/s/AKfycbzwsuujgKIFErh3PRlPieQ-yLbVHHYI2W496P6nxHU/dev', function(data) { 
+   var letterDay = document.getElementById('letterDay')
+   var announdment = document.getElementById('announcement')
+   letterDay.set
+
+   console.log(data.letterDay);
+   console.log(data.announcement);
+
+});
+
+
+    </script>
+</html>
+
