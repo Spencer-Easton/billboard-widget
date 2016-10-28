@@ -1,0 +1,22 @@
+{
+  "name": "billboard-widget",
+  "version": "0.0.1",
+  "description": "A small widget for ccsknights.org",
+  "main": "public/html.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spencer-Easton/billboard-widget.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spencer-Easton/billboard-widget/issues"
+  },
+  "homepage": "https://github.com/Spencer-Easton/billboard-widget#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
