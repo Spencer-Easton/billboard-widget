@@ -39,10 +39,14 @@
     }
 
 
-    jsonp('https://script.google.com/a/macros/ccsknights.org/s/AKfycbzwsuujgKIFErh3PRlPieQ-yLbVHHYI2W496P6nxHU/dev', function(data) {
+    jsonp('https://script.google.com/macros/s/AKfycbzbofRKikTP6HLQeP-wvNq9ABlU1k-klPF5cn_6b-yuT_Xsrd4/exec', function(data) {
         var letterDay = document.getElementById('letterDay');
         var announdment = document.getElementById('announcement');
-        letterDay.innerHTML = data.letterDay;
+        if(data.letterDay !== ""){
+            letterDay.innerHTML = "Today is: "+data.letterDay;
+        }else{
+            letterDay.innerHTML = "Welcome to<br>Copenhagen Central School"
+        }        
         announdment.innerHTML = data.announcement;
     });
 
