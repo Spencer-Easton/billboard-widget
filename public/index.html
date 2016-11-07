@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
+<!DOCTYPE html><html><head><style>body {
             background-color:transparent;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.125em;
+            font-style: normal;
+            font-weight: normal;
         }
         #letterDay{}
         #announcement{}
@@ -12,45 +12,4 @@
         }
         #bulletinView{
             color:#0f4b2f;
-        }
-    </style>
-</head>
-<body>
-<div id="bulletinWidget">
-    <div id="bulletinView">
-        <h2 id="letterDay"></h2>
-        <h2 id="announcement"></h2>
-    </div>
-
-</div>
-</body>
-<script>
-    function jsonp(url, callback) {
-        var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
-        window[callbackName] = function(data) {
-            delete window[callbackName];
-            document.body.removeChild(script);
-            callback(data);
-        };
-
-        var script = document.createElement('script');
-        script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
-        document.body.appendChild(script);
-    }
-
-
-    jsonp('https://script.google.com/macros/s/AKfycbzbofRKikTP6HLQeP-wvNq9ABlU1k-klPF5cn_6b-yuT_Xsrd4/exec', function(data) {
-        var letterDay = document.getElementById('letterDay');
-        var announdment = document.getElementById('announcement');
-        if(data.letterDay !== ""){
-            letterDay.innerHTML = "Today is: "+data.letterDay;
-        }else{
-            letterDay.innerHTML = "Welcome to<br>Copenhagen Central School"
-        }        
-        announdment.innerHTML = data.announcement;
-    });
-
-
-</script>
-</html>
-
+        }</style></head><body><div id="bulletinWidget"><div id="bulletinView"><h2 id="announcement"></h2><h2 id="letterDay"></h2></div></div></body><script src="billboard-min.js"></script></html>

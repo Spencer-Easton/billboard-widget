@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Spencer-Easton/billboard-widget#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify": "0.0.14",
+    "gulp-usemin": "^0.3.25"
   }
 }
