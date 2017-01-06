@@ -30,7 +30,7 @@ jsonp('https://script.google.com/macros/s/AKfycbzbofRKikTP6HLQeP-wvNq9ABlU1k-klP
     if(data.announcement != ""){
         announcement.innerHTML = data.announcement;
     }else{
-        announcement.innerHTML = "Home of the Golden Knights!"
+        announcement.innerHTML = ""
     }
 
 });
