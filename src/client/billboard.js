@@ -20,13 +20,12 @@ jsonp('https://script.google.com/macros/s/AKfycbzbofRKikTP6HLQeP-wvNq9ABlU1k-klP
     var letterDay = document.getElementById('letterDay');
     var announcement = document.getElementById('announcement');
 
-    if(data.letterDay != null){
-        letterDay.innerHTML = "Today is: "+data.letterDay;
-    }else{
+    if (data.letterDay != "") {
+        letterDay.innerHTML = "Today is: " + data.letterDay;
+    } else {
         letterDay.innerHTML = "Welcome to Copenhagen Central School"
     }
 
-    console.log(typeof data.announcement);
     if(data.announcement != ""){
         announcement.innerHTML = data.announcement;
     }else{
