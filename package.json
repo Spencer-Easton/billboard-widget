@@ -21,5 +21,8 @@
     "gulp-htmlmin": "^3.0.0",
     "gulp-minify": "0.0.14",
     "gulp-usemin": "^0.3.25"
+  },
+  "dependencies": {
+    "gulp-replace": "^1.0.0"
   }
 }
